@@ -6,7 +6,7 @@
 ####下载necessitas SDK
 可以到
 http://sourceforge.net/projects/necessitas/files/去下载。  
-因为SDK是在线安装的，所以需要到http://files.kde.org/necessitas/sdk_master/上去下载软件包和数据，在公司的网络条件会比较费时。我已经下载了一份，放在内部服务器上。所以你也可以使用内部服务器，需要改动一下files.kde.org的域名指向. 只需在/etc/hosts里加入下面一行  
+因为SDK是在线安装的，所以需要到http://files.kde.org/necessitas/sdk_master/ 上去下载软件包和数据，在公司的网络条件会比较费时。我已经下载了一份，放在内部服务器上。所以你也可以使用内部服务器，需要改动一下files.kde.org的域名指向. 只需在/etc/hosts里加入下面一行  
 128.224.176.14 files.kde.org
 
 ####安装Qt应用到Android
