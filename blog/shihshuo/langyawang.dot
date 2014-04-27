@@ -12,7 +12,7 @@ digraph G {
 	w1:f0 -> w20;
 	w1:f1 -> w21;
 
-	w30 [label="<f0>王肇|<f1>王夏|<f2>王馥"]
+	w30 [label="<f0>王肇|<f1>王夏|<f2>王馥|<f3>王烈|<f4>王芬"]
 	w31 [label="<f0>王裁|<f1>王基|<f2>王正"]
 	w32 [label="<f0>王乂|<f1>王浑"]
 	w20:f0 -> w30;
@@ -21,7 +21,7 @@ digraph G {
 
 	w40 [label="<f0>王俊"]
 	w41 [label="<f0>王根"]
-	w42 [label="<f0>王导"]
+	w42 [label="<f0>王导|<f1>王颖|<f2>王敞"]
 	w43 [label="<f0>王含|<f1>王敦"]
 	w44 [label="<f0>王旷|<f1>王廙|<f2>王彬"]
 	w45 [label="<f0>王衍|<f1>王澄|<f2>王诩"]
@@ -35,7 +35,7 @@ digraph G {
 	w32:f1 -> w46;
 
 	w50 [label="<f0>王遐"]
-	w51 [label="<f0>王洽|<f1>王协|<f2>王荟|<f3>王劭"]
+	w51 [label="<f0>王悦|<f1>王恬|<f2>王洽|<f3>王协|<f4>王荟|<f5>王劭"]
 	w52 [label="<f0>王瑜|<f1>王应"]
 	w53 [label="<f0>王羲之"]
 	w54 [label="<f0>王胡之|<f1>王耆之"]
@@ -44,7 +44,7 @@ digraph G {
 	w57 [label="<f0>王詹|<f1>王徽"]
 	w58 [label="<f0>王绥|<f1>王兴"]
 	w40 -> w50;
-	w42 -> w51;
+	w42:f0 -> w51;
 	w43:f0 -> w52;
 	w44:f0 -> w53;
 	w44:f1 -> w54;
@@ -54,46 +54,54 @@ digraph G {
 	w46 -> w58;
 
 	w60 [label="<f0>王恪"]
+	w600 [label="<f0>王琨"]
 	w61 [label="<f0>王珣|<f1>王珉"]
 	w62 [label="<f0>王廞"]
-	w63 [label="<f0>王穆|<f1>王谧"]
-	w64 [label="<f0>王玄之|<f1>王凝之|<f2>王徽之|<f3>王献之"]
+	w63 [label="<f0>王穆|<f1>王默|<f2>王谧|<f3>王恢"]
+	w64 [label="<f0>王玄之|<f1>王凝之|<f2>王涣之|<f3>王肃之|<f4>王徽之|<f5>王操之|<f6>王献之"]
 	w65 [label="<f0>王随之"]
 	w50 -> w60;
-	w51:f0 -> w61;
-	w51:f2 -> w62;
-	w51:f3 -> w63;
+	w51:f1 -> w600;
+	w51:f2 -> w61;
+	w51:f4 -> w62;
+	w51:f5 -> w63;
 	w53 -> w64;
 	w54:f1 -> w65;
 
 	w70 [label="<f0>王欣之"]
-	w71 [label="<f0>王弘|<f1>王昙首"]
-	w72 [label="<f0>王华"]
-	w73 [label="<f0>王僧朗"]
+	w700 [label="<f0>王嘏"]
+	w71 [label="<f0>王弘|<f1>王虞|<f2>王柳|<f3>王孺|<f4>王昙首"]
+	w710 [label="<f0>王朗|<f1>王练"]
+	w72 [label="<f0>王泰|<f1>王华"]
+	w73 [label="<f0>王简|<f1>王智|<f2>王超|<f3>王僧朗"]
 	w74 [label="<f0>王瓘|<f1>王球|<f2>王琇"]
 	w75 [label="<f0>王桢之"]
 	w76 [label="<f0>王靖之"]
 	w77 [label="<f0>王弘之"]
 	w60 -> w70;
+	w600 -> w700;
 	w61:f0 -> w71;
+	w61:f1 -> w710;
 	w62 -> w72;
 	w63:f0 -> w73;
-	w63:f1 -> w74;
-	w64:f2 -> w75;
-	w64:f3 -> w76;
+	w63:f2 -> w74;
+	w64:f4 -> w75;
+	w64:f6 -> w76;
 	w65 -> w77;
 
+	w800 [label="<f0>王恢"]
 	w80 [label="<f0>王锡|<f1>王僧达"]
 	w81 [label="<f0>王僧绰|<f1>王僧虔"]
 	w82 [label="<f0>王定华"]
-	w83 [label="<f0>王粹"]
+	w83 [label="<f0>王粹|<f1>王彧"]
 	w84 [label="<f0>王翼之"]
 	w85 [label="<f0>王悦之"]
 	w86 [label="<f0>王普曜|<f1>王罗云"]
+	w700 -> w800;
 	w71:f0 -> w80;
-	w71:f1 -> w81;
-	w72 -> w82;
-	w73 -> w83;
+	w71:f4 -> w81;
+	w72:f1 -> w82;
+	w73:f3 -> w83;
 	w75 -> w84;
 	w76 -> w85;
 	w77 -> w86;
@@ -101,13 +109,13 @@ digraph G {
 	w90 [label="<f0>王道琰"]
 	w91 [label="<f0>王俭"]
 	w92 [label="<f0>王慈"]
-	w93 [label="<f0>王份"]
+	w93 [label="<f0>王份|<f1>王奂"]
 	w94 [label="<f0>王晏|<f1>王诩"]
 	w95 [label="<f0>王思远"]
 	w80:f1 -> w90;
 	w81:f0 -> w91;
 	w81:f1 -> w92;
-	w83 -> w93;
+	w83:f0 -> w93;
 	w86:f0 -> w94;
 	w86:f1 -> w95;
 
@@ -116,15 +124,35 @@ digraph G {
 	wa2 [label="<f0>王琳"]
 	w90 -> wa0;
 	w91 -> wa1;
-	w93 -> wa2;
+	w93:f0 -> wa2;
 
 	edge [dir=back];
 	node [ shape = box,fontcolor=blue ];
 
 	wangdao [label="王丞相\n茂弘"];
-	wangdao -> w42; 
+	wangdao -> w42:f0; 
 
-	wangdun [label="大将军"];
+	wangdun [label="大将军\n处仲"];
 	wangdun -> w43:f1; 
 
+	wangye [label="王太尉\n王夷甫"];
+	wangye -> w45:f0; 
+
+	wangdeng [label="王平子"];
+	wangdeng -> w45:f1; 
+
+	wangxizhi [label="王右军\n王会稽\n王逸少"];
+	wangxizhi -> w53; 
+
+	wanghuzhi [label="王修龄"];
+	wanghuzhi -> w54:f0; 
+
+	wanghuizhi [label="王子猷"];
+	wanghuizhi -> w64:f4; 
+
+	wangxianzhi [label="王子敬"];
+	wangxianzhi -> w64:f6; 
+
+	{rank = same; w20; wangye;wangdao; wangdun; }
+	{rank = same; w20; wangxizhi; }
 }
