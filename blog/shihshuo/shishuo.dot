@@ -1,0 +1,130 @@
+digraph G {
+	graph [layout=dot rankdir=LR]
+
+	w0[ label="王仁" ]
+	node [ shape = record ];
+
+	w1 [label="<f0>王融|<f1>王谊|<f2>王睿|<f3>王典"]
+	w0->w1;
+
+	w20 [label="<f0>王祥|<f1>王览"]
+	w21 [label="<f0>王雄"]
+	w1:f0 -> w20;
+	w1:f1 -> w21;
+
+	w30 [label="<f0>王肇|<f1>王夏|<f2>王馥"]
+	w31 [label="<f0>王裁|<f1>王基|<f2>王正"]
+	w32 [label="<f0>王乂|<f1>王浑"]
+	w20:f0 -> w30;
+	w20:f1 -> w31;
+	w21 -> w32;
+
+	w40 [label="<f0>王俊"]
+	w41 [label="<f0>王根"]
+	w42 [label="<f0>王导"]
+	w43 [label="<f0>王含|<f1>王敦"]
+	w44 [label="<f0>王旷|<f1>王廙|<f2>王彬"]
+	w45 [label="<f0>王衍|<f1>王澄|<f2>王诩"]
+	w46 [label="<f0>王戎"]
+	w30:f0 -> w40;
+	w30:f2 -> w41;
+	w31:f0 -> w42;
+	w31:f1 -> w43;
+	w31:f2 -> w44;
+	w32:f0 -> w45;
+	w32:f1 -> w46;
+
+	w50 [label="<f0>王遐"]
+	w51 [label="<f0>王洽|<f1>王协|<f2>王荟|<f3>王劭"]
+	w52 [label="<f0>王瑜|<f1>王应"]
+	w53 [label="<f0>王羲之"]
+	w54 [label="<f0>王胡之|<f1>王耆之"]
+	w55 [label="<f0>王彭之|<f1>王彪之"]
+	w56 [label="<f0>王玄"]
+	w57 [label="<f0>王詹|<f1>王徽"]
+	w58 [label="<f0>王绥|<f1>王兴"]
+	w40 -> w50;
+	w42 -> w51;
+	w43:f0 -> w52;
+	w44:f0 -> w53;
+	w44:f1 -> w54;
+	w44:f2 -> w55;
+	w45:f0 -> w56;
+	w45:f1 -> w57;
+	w46 -> w58;
+
+	w60 [label="<f0>王恪"]
+	w61 [label="<f0>王珣|<f1>王珉"]
+	w62 [label="<f0>王廞"]
+	w63 [label="<f0>王穆|<f1>王谧"]
+	w64 [label="<f0>王玄之|<f1>王凝之|<f2>王徽之|<f3>王献之"]
+	w65 [label="<f0>王随之"]
+	w50 -> w60;
+	w51:f0 -> w61;
+	w51:f2 -> w62;
+	w51:f3 -> w63;
+	w53 -> w64;
+	w54:f1 -> w65;
+
+	w70 [label="<f0>王欣之"]
+	w71 [label="<f0>王弘|<f1>王昙首"]
+	w72 [label="<f0>王华"]
+	w73 [label="<f0>王僧朗"]
+	w74 [label="<f0>王瓘|<f1>王球|<f2>王琇"]
+	w75 [label="<f0>王桢之"]
+	w76 [label="<f0>王靖之"]
+	w77 [label="<f0>王弘之"]
+	w60 -> w70;
+	w61:f0 -> w71;
+	w62 -> w72;
+	w63:f0 -> w73;
+	w63:f1 -> w74;
+	w64:f2 -> w75;
+	w64:f3 -> w76;
+	w65 -> w77;
+
+	w80 [label="<f0>王锡|<f1>王僧达"]
+	w81 [label="<f0>王僧绰|<f1>王僧虔"]
+	w82 [label="<f0>王定华"]
+	w83 [label="<f0>王粹"]
+	w84 [label="<f0>王翼之"]
+	w85 [label="<f0>王悦之"]
+	w86 [label="<f0>王普曜|<f1>王罗云"]
+	w71:f0 -> w80;
+	w71:f1 -> w81;
+	w72 -> w82;
+	w73 -> w83;
+	w75 -> w84;
+	w76 -> w85;
+	w77 -> w86;
+
+	w90 [label="<f0>王道琰"]
+	w91 [label="<f0>王俭"]
+	w92 [label="<f0>王慈"]
+	w93 [label="<f0>王份"]
+	w94 [label="<f0>王晏|<f1>王诩"]
+	w95 [label="<f0>王思远"]
+	w80:f1 -> w90;
+	w81:f0 -> w91;
+	w81:f1 -> w92;
+	w83 -> w93;
+	w86:f0 -> w94;
+	w86:f1 -> w95;
+
+	wa0 [label="<f0>王融"]
+	wa1 [label="<f0>王骞|<f1>王瑓"]
+	wa2 [label="<f0>王琳"]
+	w90 -> wa0;
+	w91 -> wa1;
+	w93 -> wa2;
+
+	edge [dir=back];
+	node [ shape = box,fontcolor=blue ];
+
+	wangdao [label="王丞相\n茂弘"];
+	wangdao -> w42; 
+
+	wangdun [label="大将军"];
+	wangdun -> w43:f1; 
+
+}
